@@ -51,4 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  var step9ul = document.querySelector('#step9_ul');
+  var button9 = document.querySelector('#button9');
+  button9.addEventListener('click', function(){
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/a_car',
+      method: 'GET',
+      dataType: 'html'
+    }).done(function(responseData){
+        step9ul.append(responseData);
+    });
+  });
+
 });
