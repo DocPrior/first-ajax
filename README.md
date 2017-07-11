@@ -12,3 +12,11 @@
 3.4 xhr type, returns js file
 
 4.3 500
+
+6.2 always function always fires as incidicated by console.log; server will also throw 500 if url is worng
+
+7.4 38036
+
+8.4 2017-07-11 16:14:00 -0500
+8.5 2017-07-12 00:15:38 +0300
+8.6 2017-07-11 16:17:06 -0500; 2017-07-11 11:17:44 -1000; 2017-07-12 02:48:11 +0530
