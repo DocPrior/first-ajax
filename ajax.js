@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
       url: 'http://first-ajax-api.herokuapp.com/ping',
       method: 'GET',
       dataType: 'text'
+    }).done(function(responseData) {
+      console.log('3456response');
+      document.querySelector('#step3456').append(responseData);
     })
   })
 
