@@ -7,18 +7,23 @@ document.addEventListener("DOMContentLoaded", function() {
       dataType: 'text'
     });
   });
-
+  var step3456 = document.querySelector('#step3456');
   var button3456 = document.querySelector('#button3456');
   button3456.addEventListener('click', function() {
     $.ajax({
-      url: 'http://first-ajax-api.herokuapp.com/ping',
+      url: 'http://first-ajax-api.herokuapp.com/pong',
       method: 'GET',
       dataType: 'text'
     }).done(function(responseData) {
-      console.log('3456response');
-      document.querySelector('#step3456').append(responseData);
+        console.log('3456response');
+        step3456.append(responseData);
+    }).fail(function(responseData) {
+        console.log('3456response');
+        step3456.append(responseData);
+    }).always(function() {
+        console.log('Hey requests finished');
     })
-  })
+  });
 
 
 });

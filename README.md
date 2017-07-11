@@ -10,3 +10,5 @@
  1.6 dcoument, other or script, parser, same as 0.4
 
 3.4 xhr type, returns js file
+
+4.3 500
